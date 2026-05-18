@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "text": "{\"name\":\"projects/12533741011735307805/screens/df04ee258a3341eca9b69698e76b8119\",\"title\":\"Daily Lesson: Word Cards\",\"screenshot\":{\"name\":\"projects/12533741011735307805/files/9054274689316919731\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/ADBb0uhVLIZBIc4B9p5HKxRWAULQ6JoxKjXvRQ_1AfX2bqmx0f2xXATDTWKDEww22PS70wyEGKCtk1efEjs_bwVJNsNkiiSkl6g-dx6cuEkNcTi61DWe2JRX9kw_4Fxn0mpHkWa47ILhiVApGFEJLbRsPBN8BzEGBLdAZ0wPY2uZ4zkbHRXm2Rh4wEvniENCc0JhkaoNfn8JcFB4AwfB_uyH3gKUkOUk_nhaRVS8oaGgNIbeMXMqIq2dyxqHxc-G\"},\"htmlCode\":{\"name\":\"projects/12533741011735307805/files/16705250228401696773\",\"downloadUrl\":\"https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MWYyOTcxZGZiMzYwMmE5YjYyZTNjMmExNGQ2EgsSBxCr_dvRvw0YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjUzMzc0MTAxMTczNTMwNzgwNQ&filename=&opi=89354086\",\"mimeType\":\"text/html\"},\"width\":\"780\",\"height\":\"1996\",\"deviceType\":\"MOBILE\"}",
+        "type": "text"
+      }
+    ],
+    "structuredContent": {
+      "deviceType": "MOBILE",
+      "height": "1996",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MWYyOTcxZGZiMzYwMmE5YjYyZTNjMmExNGQ2EgsSBxCr_dvRvw0YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjUzMzc0MTAxMTczNTMwNzgwNQ&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/12533741011735307805/files/16705250228401696773"
+      },
+      "name": "projects/12533741011735307805/screens/df04ee258a3341eca9b69698e76b8119",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhVLIZBIc4B9p5HKxRWAULQ6JoxKjXvRQ_1AfX2bqmx0f2xXATDTWKDEww22PS70wyEGKCtk1efEjs_bwVJNsNkiiSkl6g-dx6cuEkNcTi61DWe2JRX9kw_4Fxn0mpHkWa47ILhiVApGFEJLbRsPBN8BzEGBLdAZ0wPY2uZ4zkbHRXm2Rh4wEvniENCc0JhkaoNfn8JcFB4AwfB_uyH3gKUkOUk_nhaRVS8oaGgNIbeMXMqIq2dyxqHxc-G",
+        "name": "projects/12533741011735307805/files/9054274689316919731"
+      },
+      "title": "Daily Lesson: Word Cards",
+      "width": "780"
+    }
+  }
+}

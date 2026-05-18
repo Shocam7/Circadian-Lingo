@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "text": "{\"name\":\"projects/12533741011735307805/screens/9620462acac74028bbe0b5800c0cfd67\",\"title\":\"Daily Lesson: Quizzes\",\"screenshot\":{\"name\":\"projects/12533741011735307805/files/1985847092939183119\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/ADBb0uiR5N48lmGtTSZvNO0Hu-DdrtjSBMOzc86onELjKTzNWsf7yI1104X4tw-hhkn8uDEFbRdnCtdtaxcsXpl2F1m8U6Yv95QJNsIy5pcotaCgbvFEeSAexwONUtyjG-6mE8K7GRss2z2GxC8rlqMT2_wCT-66Hrv0TNnE7PjIYy6JeVOcz71LCXvTuZBMxA7z2tyZXBLJE3GeY7NgIU1uEkSNV6HH1w-7hauODPPQfb35RoznFxLCuDAvOeRC\"},\"htmlCode\":{\"name\":\"projects/12533741011735307805/files/13509060821780631823\",\"downloadUrl\":\"https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MWYyOTgxMGIxMDIwN2M0ZDU0NjA1MTk3NjUxEgsSBxCr_dvRvw0YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjUzMzc0MTAxMTczNTMwNzgwNQ&filename=&opi=89354086\",\"mimeType\":\"text/html\"},\"width\":\"780\",\"height\":\"1916\",\"deviceType\":\"MOBILE\"}",
+        "type": "text"
+      }
+    ],
+    "structuredContent": {
+      "deviceType": "MOBILE",
+      "height": "1916",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MWYyOTgxMGIxMDIwN2M0ZDU0NjA1MTk3NjUxEgsSBxCr_dvRvw0YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjUzMzc0MTAxMTczNTMwNzgwNQ&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/12533741011735307805/files/13509060821780631823"
+      },
+      "name": "projects/12533741011735307805/screens/9620462acac74028bbe0b5800c0cfd67",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uiR5N48lmGtTSZvNO0Hu-DdrtjSBMOzc86onELjKTzNWsf7yI1104X4tw-hhkn8uDEFbRdnCtdtaxcsXpl2F1m8U6Yv95QJNsIy5pcotaCgbvFEeSAexwONUtyjG-6mE8K7GRss2z2GxC8rlqMT2_wCT-66Hrv0TNnE7PjIYy6JeVOcz71LCXvTuZBMxA7z2tyZXBLJE3GeY7NgIU1uEkSNV6HH1w-7hauODPPQfb35RoznFxLCuDAvOeRC",
+        "name": "projects/12533741011735307805/files/1985847092939183119"
+      },
+      "title": "Daily Lesson: Quizzes",
+      "width": "780"
+    }
+  }
+}

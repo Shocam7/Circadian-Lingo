@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "text": "{\"name\":\"projects/12533741011735307805/screens/6b6b921dd6854d7ca98e383b12a1e7f2\",\"title\":\"Daily Lesson: Stories\",\"screenshot\":{\"name\":\"projects/12533741011735307805/files/4599573609944220931\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/ADBb0uiFhes0pMImA4Mi-FyJtCWVPnkXHr0ch2ErCzgx_X2q-GWTkSjshMGlGows8vmCmdTHAQTXGFdyd-gx7Q5nSwCVwLr24UVn3FbAAAxLzyX4kcMSwP1JcNfmjuLAbOwpqdP7sDvRU2VDDoXJBsEUnRdl_xK4ecKl3K8SZ9eQsgnvrf-LQTl_zHMJquApaWXa0jYEpK5Swg5KNFZWes-UGho8iPvS8NzrYRoauQ--QSF5wSPiG5lRCWXKtAQ\"},\"htmlCode\":{\"name\":\"projects/12533741011735307805/files/2198272819312533959\",\"downloadUrl\":\"https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MWYyOTcwYWJlZjAwMmE5YmQ3MTdjMGNmMTNlEgsSBxCr_dvRvw0YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjUzMzc0MTAxMTczNTMwNzgwNQ&filename=&opi=89354086\",\"mimeType\":\"text/html\"},\"width\":\"780\",\"height\":\"2744\",\"deviceType\":\"MOBILE\"}",
+        "type": "text"
+      }
+    ],
+    "structuredContent": {
+      "deviceType": "MOBILE",
+      "height": "2744",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MWYyOTcwYWJlZjAwMmE5YmQ3MTdjMGNmMTNlEgsSBxCr_dvRvw0YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjUzMzc0MTAxMTczNTMwNzgwNQ&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/12533741011735307805/files/2198272819312533959"
+      },
+      "name": "projects/12533741011735307805/screens/6b6b921dd6854d7ca98e383b12a1e7f2",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uiFhes0pMImA4Mi-FyJtCWVPnkXHr0ch2ErCzgx_X2q-GWTkSjshMGlGows8vmCmdTHAQTXGFdyd-gx7Q5nSwCVwLr24UVn3FbAAAxLzyX4kcMSwP1JcNfmjuLAbOwpqdP7sDvRU2VDDoXJBsEUnRdl_xK4ecKl3K8SZ9eQsgnvrf-LQTl_zHMJquApaWXa0jYEpK5Swg5KNFZWes-UGho8iPvS8NzrYRoauQ--QSF5wSPiG5lRCWXKtAQ",
+        "name": "projects/12533741011735307805/files/4599573609944220931"
+      },
+      "title": "Daily Lesson: Stories",
+      "width": "780"
+    }
+  }
+}

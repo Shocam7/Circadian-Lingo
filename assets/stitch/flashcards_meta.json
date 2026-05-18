@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "text": "{\"name\":\"projects/12533741011735307805/screens/1849d2b78ebc42bf9bc763fe1f6cca08\",\"title\":\"Daily Lesson: Flashcards\",\"screenshot\":{\"name\":\"projects/12533741011735307805/files/1272254523747328848\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/ADBb0uh5DW1-tb5mqySSLsZc-thixUF-4q6_IDBohWcClQ4jJWgdVeyVp9ORfZd_1WnOaZNujHoWkRK7qXVoEgbJUDdFFe4pQAB4NJrDePDcZcY6GRbnEk_usA0oZ6B3dBGAMeOoFwjn16qWThd6RSqA9frgumjBvZjiG_iJgS9-tM7BhZVeluuXe6DOnHKjo1e-eRcAryp4bKai8_ZGeJ2BBmkCSzUCtC2NNiFP1SiOgDwibvejnFPsUXd441M\"},\"htmlCode\":{\"name\":\"projects/12533741011735307805/files/16224346289269230410\",\"downloadUrl\":\"https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MWYyOTczMWVmZjUwODE2ZDkyMTA4M2Q4ZGRiEgsSBxCr_dvRvw0YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjUzMzc0MTAxMTczNTMwNzgwNQ&filename=&opi=89354086\",\"mimeType\":\"text/html\"},\"width\":\"780\",\"height\":\"2136\",\"deviceType\":\"MOBILE\"}",
+        "type": "text"
+      }
+    ],
+    "structuredContent": {
+      "deviceType": "MOBILE",
+      "height": "2136",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MWYyOTczMWVmZjUwODE2ZDkyMTA4M2Q4ZGRiEgsSBxCr_dvRvw0YAZIBJAoKcHJvamVjdF9pZBIWQhQxMjUzMzc0MTAxMTczNTMwNzgwNQ&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/12533741011735307805/files/16224346289269230410"
+      },
+      "name": "projects/12533741011735307805/screens/1849d2b78ebc42bf9bc763fe1f6cca08",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uh5DW1-tb5mqySSLsZc-thixUF-4q6_IDBohWcClQ4jJWgdVeyVp9ORfZd_1WnOaZNujHoWkRK7qXVoEgbJUDdFFe4pQAB4NJrDePDcZcY6GRbnEk_usA0oZ6B3dBGAMeOoFwjn16qWThd6RSqA9frgumjBvZjiG_iJgS9-tM7BhZVeluuXe6DOnHKjo1e-eRcAryp4bKai8_ZGeJ2BBmkCSzUCtC2NNiFP1SiOgDwibvejnFPsUXd441M",
+        "name": "projects/12533741011735307805/files/1272254523747328848"
+      },
+      "title": "Daily Lesson: Flashcards",
+      "width": "780"
+    }
+  }
+}

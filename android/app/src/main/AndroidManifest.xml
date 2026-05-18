@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ── Audio Recording ─────────────────────────────────────────────── -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- ── Network Access ──────────────────────────────────────────────── -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <!-- ── Foreground Service (generic) ────────────────────────────────── -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- ── Foreground Service type: microphone (required Android 14 / API 34) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+
+    <!-- ── Foreground Service type: dataSync (lesson generation) ─────────── -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <!-- ── Notification permission (required Android 13 / API 33) ────── -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- ── Boot Permission ─────────────────────────────────────────────── -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <!-- ── WakeLock Permission ──────────────────────────────────────────── -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:label="Circadian Lingo"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- ── Audio Capture Foreground Service ────────────────────────── -->
+        <!-- foregroundServiceType="microphone" is mandatory for Android 14+ -->
+        <service
+            android:name=".AudioCaptureService"
+            android:foregroundServiceType="microphone"
+            android:exported="false" />
+
+        <!-- ── Flutter Modernization ────────────────────────────────────── -->
+        <meta-data
+            android:name="io.flutter.embedding.android.EnableImpeller"
+            android:value="true" />
+        <meta-data
+            android:name="io.flutter.embedding.android.AOTSharedLibraryName"
+            android:value="libapp.so" />
+        <meta-data
+            android:name="io.flutter.embedding.android.FlutterAssetsDir"
+            android:value="flutter_assets" />
+
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+        <!-- ── Accessibility Service ─────────────────────────────────────── -->
+        <service
+            android:name=".CircadianAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- ── Quick Settings Tile ───────────────────────────────────────── -->
+        <service
+            android:name=".CircadianTileService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Circadian Capture"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- ── Screenshot Receiver ───────────────────────────────────────── -->
+        <receiver
+            android:name=".ScreenshotReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.circadian_lingo.ACTION_ALLOW_SCREENSHOT" />
+                <action android:name="com.example.circadian_lingo.ACTION_DENY_SCREENSHOT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ── Audio Notification Receiver ────────────────────────────────── -->
+        <receiver
+            android:name=".AudioNotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.circadian_lingo.ACTION_ALLOW_AUDIO" />
+                <action android:name="com.example.circadian_lingo.ACTION_DENY_AUDIO" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ── Notification Cancel Receiver ────────────────────────────────── -->
+        <receiver
+            android:name=".NotificationCancelReceiver"
+            android:exported="false" />
+
+        <!-- ── Lesson Schedule Receiver ────────────────────────────────────── -->
+        <receiver
+            android:name=".LessonScheduleReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.circadian_lingo.ACTION_START_GENERATION" />
+                <action android:name="com.example.circadian_lingo.ACTION_CANCEL_GENERATION" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ── Boot Receiver ─────────────────────────────────────────────── -->
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ── Lesson Generation Foreground Service ───────────────────────── -->
+        <service
+            android:name=".LessonGenerationForegroundService"
+            android:foregroundServiceType="dataSync"
+            android:exported="false" />
+            
+        <!-- ── UI Translation Foreground Service ──────────────────────────── -->
+        <service
+            android:name=".UITranslationForegroundService"
+            android:foregroundServiceType="dataSync"
+            android:exported="false" />
+    </application>
+
+    <!-- Required to query activities that can process text, see:
+         https://developer.android.com/training/package-visibility and
+         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+    </queries>
+</manifest>
