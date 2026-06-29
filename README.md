@@ -1,3 +1,6 @@
+**Play Protect warning:** Because Circadian Lingo uses a background microphone service and an Accessibility Service together, Google Play Protect may block installation. To install the debug APK/release APK, tap **"More details"** on the warning dialog, then **"Install anyway"** or disable Play Protect globally. Re-enable it after installing, if you prefer.
+
+
 # Circadian Lingo
 
 **Learn a language from your day — privately, on your device.**
